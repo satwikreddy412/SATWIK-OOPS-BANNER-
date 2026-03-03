@@ -1,18 +1,18 @@
-/**
- * OOPSBannerApp
- *
- * UC1: Print the literal text "OOPS" to the console.
- *
- * @author Satwik
- * @version 1.0
- */
 public class OOPSBannerApp {
 
-    /**
-     * Main method - Entry point of the application
-     */
     public static void main(String[] args) {
 
-        System.out.println("OOPS");
+        // Creating banner using String array
+        String[] banner = {
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"),
+                "*        OOPS BANNER APP        *",
+                "*        UC4 - Arrays & Loops   *",
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*")
+        };
+
+        // Printing banner using enhanced for-loop
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
